@@ -30,10 +30,10 @@ namespace TestProjectXUnitVijaySales
         public async Task Can_Create_Customer()
         {
             // Arrange
-            var todoItem = new Customer { Id=1,Email = "shiv.narayan@transflower.in", ContactNumber = "9881735801", Location="Pune" };
+            var customer = new Customer { Id=1,Email = "shiv.narayan@transflower.in", ContactNumber = "9881735801", Location="Pune" };
 
             // Act
-            var response = await _httpClient.PostAsync(BaseUrl, new StringContent(JsonConvert.SerializeObject(todoItem), Encoding.UTF8, "application/json"));
+            var response = await _httpClient.PostAsync(BaseUrl, new StringContent(JsonConvert.SerializeObject(customer), Encoding.UTF8, "application/json"));
 
             // Assert
             response.EnsureSuccessStatusCode();

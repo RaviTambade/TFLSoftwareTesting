@@ -7,17 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalog", "ProductCa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCart", "ShoppingCart\ShoppingCart.csproj", "{A34DD774-31C8-4773-A158-9DF132434B2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogAPI", "CatalogAPI\CatalogAPI.csproj", "{BB9249BB-03C6-4042-8000-E3DFC34AD88F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogAPI", "CatalogAPI\CatalogAPI.csproj", "{BB9249BB-03C6-4042-8000-E3DFC34AD88F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCartAPI", "ShoppingCartAPI\ShoppingCartAPI.csproj", "{7F86D98C-E8F2-4472-9E5D-FC32C6F6DA83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartAPI", "ShoppingCartAPI\ShoppingCartAPI.csproj", "{7F86D98C-E8F2-4472-9E5D-FC32C6F6DA83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectVijaySales", "TestProjectVijaySales\TestProjectVijaySales.csproj", "{097CCBD2-DB6F-4862-B12A-C3BDD3DB1E62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectVijaySales", "TestProjectVijaySales\TestProjectVijaySales.csproj", "{097CCBD2-DB6F-4862-B12A-C3BDD3DB1E62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectMSVijaySales", "TestProjectMSVijaySales\TestProjectMSVijaySales.csproj", "{F77DA0F2-43C4-4573-ACDD-0DA8E30ACAA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectMSVijaySales", "TestProjectMSVijaySales\TestProjectMSVijaySales.csproj", "{F77DA0F2-43C4-4573-ACDD-0DA8E30ACAA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectXUnitVijaySales", "TestProjectXUnitVijaySales\TestProjectXUnitVijaySales.csproj", "{5ABA6F78-E6A1-4175-B898-53DC20F1B484}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectXUnitVijaySales", "TestProjectXUnitVijaySales\TestProjectXUnitVijaySales.csproj", "{5ABA6F78-E6A1-4175-B898-53DC20F1B484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathLib", "MathLib\MathLib.csproj", "{F1B4F84A-0970-4AE4-B34E-106A7678EABA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathLib", "MathLib\MathLib.csproj", "{F1B4F84A-0970-4AE4-B34E-106A7678EABA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessingAPI", "OrderProcessingAPI\OrderProcessingAPI.csproj", "{FD60CC4E-AAAB-4A21-A8A8-E09313B156E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{F1B4F84A-0970-4AE4-B34E-106A7678EABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1B4F84A-0970-4AE4-B34E-106A7678EABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1B4F84A-0970-4AE4-B34E-106A7678EABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD60CC4E-AAAB-4A21-A8A8-E09313B156E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD60CC4E-AAAB-4A21-A8A8-E09313B156E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD60CC4E-AAAB-4A21-A8A8-E09313B156E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD60CC4E-AAAB-4A21-A8A8-E09313B156E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
