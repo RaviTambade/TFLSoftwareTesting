@@ -44,16 +44,13 @@ namespace TestProjectXUnitVijaySales
             Assert.Equal(expectedProducts, actualProducts);
         }
 
-
         [Fact]
         public async Task GetAsync_GetProduct()
         {
             //Arrange
             var controller=new FlowersController();
             int id = 45;
-
             Product expectedProduct = new Product("Jasmine", "Smelling Flower", "flowers");
-
 
             //Act
             var actualProduct = await controller.GetByIdAsync(id);

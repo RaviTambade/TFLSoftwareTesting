@@ -24,7 +24,7 @@ namespace ProductCatalog.Repositories
             //database code will take input as id 
             //that will search product with id 
             //product will be returned
-            Product product=new Product("Jasmine", "Smelling Flower", "flowers");
+            Product product=new Product("Rose", "Smelling Flower", "flowers");
             return product;
         }
 

@@ -10,7 +10,7 @@
 
         public int Subtract(int x, int y)
         {
-            return 100;
+            return x-y;
         }
 
     }

@@ -1,7 +1,6 @@
 namespace TestProjectVijaySales
 {
 
-
     //Testing Framework used : nUnit
     public class Tests
     {

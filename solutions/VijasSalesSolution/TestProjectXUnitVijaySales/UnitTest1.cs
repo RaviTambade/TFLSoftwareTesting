@@ -2,6 +2,8 @@ using MathLib;
 
 namespace TestProjectXUnitVijaySales
 {
+
+    //Testing Reusable Libraries
     public class UnitTest1
     {
         [Fact]
@@ -14,17 +16,13 @@ namespace TestProjectXUnitVijaySales
         [Fact]
         public void SubtractionTest()
         {
-            int num1 = 12;
-            int num2 = 13;
+            int num1 = 78;
+            int num2 = 7;
 
-            int expectedValue = 25;
-          
-            //method call
-            //collect result
-            //Assert result
+            int expectedValue = 71;
             MathEngine mathEngine = new MathEngine();
-            int actualValue=mathEngine.Addition(num1, num2);
-            Assert.StrictEqual(expectedValue, actualValue);
+            int actualValue=mathEngine.Subtract(num1, num2);
+            Assert.Equal(expectedValue, actualValue);
         }
     }
 }
