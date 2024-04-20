@@ -25,6 +25,7 @@ namespace OrderProcessingAPI.Controllers
         [HttpGet("{userId}")]
         public async Task<List<Role>> GetRoles(int userId)
         {
+
             return await _service.GetRoles(userId);
         }
 

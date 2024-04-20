@@ -60,6 +60,12 @@ namespace Transflower.MembershipRolesMgmt.Helpers
                 context.Items["userId"] = userId;
                 context.Items["contactNumber"] = contactNumber;
                 context.Items["userRoles"] = userRoles;
+                foreach( string role in userRoles)
+                {
+                    Console.WriteLine(role);
+                }
+                
+                
             }
             catch (Exception e)
             {

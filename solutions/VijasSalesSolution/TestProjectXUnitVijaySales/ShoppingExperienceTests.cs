@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 //it a collection of .net types
 
 
-namespace ECommerceSenarios
+namespace VijaySales.ECommerce.Tests
 { 
 
     //Visibility of class
@@ -62,7 +62,6 @@ namespace ECommerceSenarios
         public void ItemTest()
         {
             Assert.Equal(56, 1);
-
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Transflower.MembershipRolesMgmt.Helpers;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OrderProcessing.Entities;
@@ -6,14 +7,14 @@ using OrderProcessing.Repositories;
 
 namespace OrderProcessingAPI.Controllers
 {
-    [Authorize("admin")]
+    [Authorize]
+    // [Authorize("Director")]
     [Route("api/[controller]")]
     [ApiController]
     public class OrdersController : ControllerBase
     {
         private readonly ILogger<OrdersController> _logger;
-
-        
+    
         public OrdersController(ILogger<OrdersController> logger)
         {
             _logger = logger;

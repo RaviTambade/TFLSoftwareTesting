@@ -2,9 +2,9 @@ using MathLib;
 using CatalogAPI.Controllers;
 using ProductCatalog.Entities;
 
-namespace TestProjectXUnitVijaySales
+namespace VijaySales.Tests
 {
-    public class UnitTestCatalogWebAPI
+    public class  CatalogTests
     {
         [Fact]
         public void GetProduct()

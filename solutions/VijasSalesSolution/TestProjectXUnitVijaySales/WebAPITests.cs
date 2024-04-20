@@ -1,20 +1,14 @@
 using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 
-using MathLib;
-using CatalogAPI.Controllers;
-using ProductCatalog.Entities;
-
-namespace TestProjectXUnitVijaySales
+namespace VijaySales.Tests
 {
-    public class UnitTestRemoteWebAPI
+    public class RemoteWebAPITests
     {
 
         private readonly HttpClient _client;
 
-        public UnitTestRemoteWebAPI() {
+        public RemoteWebAPITests() {
             // Initialize HttpClient with the base address of your web API
             _client = new HttpClient { BaseAddress = new Uri("http://localhost:5263/") };
         

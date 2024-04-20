@@ -3,8 +3,10 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Text;
+using Newtonsoft.Json.Linq;
+using System.Net.Http.Headers;
 
-namespace TestProjectXUnitVijaySales
+namespace VijaySales.Tests
 {
     public class Customer
     {
@@ -33,6 +35,9 @@ namespace TestProjectXUnitVijaySales
             var customer = new Customer { Id=1,Email = "shiv.narayan@transflower.in", ContactNumber = "9881735801", Location="Pune" };
 
             // Act
+
+            
+
             var response = await _httpClient.PostAsync(BaseUrl, 
                                                         new StringContent(JsonConvert.SerializeObject(customer), 
                                                         Encoding.UTF8, 

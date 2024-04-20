@@ -1,10 +1,10 @@
 using MathLib;
 
-namespace TestProjectXUnitVijaySales
+namespace VijaySales.Tests
 {
 
     //Testing Reusable Libraries
-    public class UnitTest1
+    public class MathEngineTests
     {
         [Fact]
         public void AdditionTest()

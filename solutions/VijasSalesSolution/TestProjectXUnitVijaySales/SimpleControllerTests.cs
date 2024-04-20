@@ -2,9 +2,9 @@ using MathLib;
 using ShoppingCartAPI.Controllers;
 
 
-namespace TestProjectXUnitVijaySales
+namespace VijaySales.Tests
 {
-    public class UnitTestSimpleWebAPI
+    public class SimpleControllerTests
     {
         [Fact]
         public void GetReturnsCorrectValue()

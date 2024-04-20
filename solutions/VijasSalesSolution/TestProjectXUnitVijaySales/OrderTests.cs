@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using TestProjectXUnitVijaySales.Utility;
 
-namespace ECommerceBPOScenarios
+namespace VijaySales.Tests
 {
 
     //C# Variables: int ,float, double, char, long, bool
