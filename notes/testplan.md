@@ -53,7 +53,7 @@ Overall, a test plan provides a comprehensive overview of the testing approach a
 
 
 
-## Test Plan : ECommere Solution
+## Test Plan Document Example: ECommerce Solution
 Creating a comprehensive test plan for an eCommerce solution involves outlining the testing approach, objectives, scope, resources, schedule, and deliverables. Here's an example of a test plan for an eCommerce solution:
 
 ---
