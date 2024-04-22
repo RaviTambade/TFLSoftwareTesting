@@ -1,6 +1,6 @@
 using MathLib;
 
-namespace VijaySales.Tests
+namespace TestProjectXUnitVijaySales.BusinessObjectTests.cs
 {
 
     //Testing Reusable Libraries
@@ -9,7 +9,7 @@ namespace VijaySales.Tests
         [Fact]
         public void AdditionTest()
         {
-           Assert.Equal(1, 1);
+            Assert.Equal(1, 1);
 
         }
 
@@ -21,7 +21,7 @@ namespace VijaySales.Tests
 
             int expectedValue = 71;
             MathEngine mathEngine = new MathEngine();
-            int actualValue=mathEngine.Subtract(num1, num2);
+            int actualValue = mathEngine.Subtract(num1, num2);
             Assert.Equal(expectedValue, actualValue);
         }
     }

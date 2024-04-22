@@ -1,11 +1,24 @@
 ﻿namespace ProductCatalog.Entities
 {
+    //Multi-Layer Application
+
+    //UI layer
+    //-----Web API
+    //          Controllers ----DI
+    //------------Service Layer
+    //------------------Business Logic Layer
+    //-----------------------Object Layer--Repository (DAL)
+    //-------------------------------------------Data Layer (MySQL)
+
+    //Object Layer Class (BOL)
     public class Product:IComparable
     {
         //Properties
         public string Name { get; set; }
         public string Description { get; set; }
         public string Category { get; set; }
+        public int StockAvailable { get; set; }
+        public float UnitPrice {  get; set; }
 
         public Product()
         {
@@ -23,14 +36,9 @@
         public int CompareTo(object? obj)
         {
             Product secondObject= obj as Product;
-            if (secondObject != null)
-            {
-                return secondObject.Name.CompareTo(Name);
-            }
-            else
-            {
-                return Name.CompareTo(Name);
-            }
+          
+            return secondObject.StockAvailable.CompareTo(StockAvailable);
+           
         }
     }
 }

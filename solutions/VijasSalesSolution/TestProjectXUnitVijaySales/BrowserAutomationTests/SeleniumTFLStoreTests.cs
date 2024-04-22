@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using Xunit;
 
-namespace VijaySales.Tests
+namespace TestProjectXUnitVijaySales.BrowserAutomationTests
 {
     public class SeleniumTests
     {

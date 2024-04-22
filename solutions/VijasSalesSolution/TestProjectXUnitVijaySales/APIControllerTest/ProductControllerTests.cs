@@ -2,19 +2,20 @@ using MathLib;
 using CatalogAPI.Controllers;
 using ProductCatalog.Entities;
 
-namespace VijaySales.Tests
+namespace TestProjectXUnitVijaySales.APIControllerTest
 {
-    public class  CatalogTests
+    public class ProductControllerTests
     {
         [Fact]
         public void GetProduct()
         {
             //Arrange
             var controller = new ProductsController();
+
             //Sample Data 
             Product expectedProduct = new Product("Rose", "Smelling Flower", "flowers");
-            int id=45;
-           
+            int id = 45;
+
             //Act
             var actualProduct = controller.GetById(45);
 
@@ -38,7 +39,7 @@ namespace VijaySales.Tests
 
             //Act
             var actualProducts = controller.GetAll();
-          
+
 
             //Assert
             Assert.Equal(expectedProducts, actualProducts);
@@ -48,7 +49,7 @@ namespace VijaySales.Tests
         public async Task GetAsync_GetProduct()
         {
             //Arrange
-            var controller=new FlowersController();
+            var controller = new FlowersController();
             int id = 45;
             Product expectedProduct = new Product("Jasmine", "Smelling Flower", "flowers");
 

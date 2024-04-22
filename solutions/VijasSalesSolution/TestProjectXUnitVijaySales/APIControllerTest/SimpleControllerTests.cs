@@ -2,7 +2,7 @@ using MathLib;
 using ShoppingCartAPI.Controllers;
 
 
-namespace VijaySales.Tests
+namespace TestProjectXUnitVijaySales.APIControllerTest
 {
     public class SimpleControllerTests
     {
@@ -21,5 +21,7 @@ namespace VijaySales.Tests
             //Assert
             Assert.Equal(expectedValue, result.Value);
         }
+
+
     }
 }

@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using TestProjectXUnitVijaySales.Utility;
 
-namespace VijaySales.Tests
+namespace TestProjectXUnitVijaySales.BusinessObjectTests.cs
 {
 
     //C# Variables: int ,float, double, char, long, bool
     //C# Types: class , struct, interface, enum, delegate, event
-    
+
     //C# inbuilt class: 
     //                  Console, String , etc.
     // Collection Classes:
@@ -29,31 +28,28 @@ namespace VijaySales.Tests
 
 
 
-    public  class TestOrderProcessing
+    public class TestOrderProcessing
     {
         [Fact]
-        public static  void CurrentDayTest()
+        public static void CurrentDayTest()
         {
-            
+
             DateTime dateTime = DateTime.Now;
-           
+
             int expectedDay = 19;
 
             int actualDay = dateTime.Day;
- 
+
             Assert.Equal(expectedDay, actualDay);
         }
 
         [Fact]
-        public   void OrderCollectionTest()
+        public void OrderCollectionTest()
         {
 
 
-            FlowersUtility mgr=new FlowersUtility();
-            List<string> allFlowers=mgr.GetTodayFreshFlowers();
-
-            //..............
-            //...............
+            FlowersUtility mgr = new FlowersUtility();
+            List<string> allFlowers = mgr.GetTodayFreshFlowers();
 
             //................
             Assert.Equal(56, 1);

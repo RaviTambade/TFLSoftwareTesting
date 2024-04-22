@@ -1,17 +1,18 @@
 using System.Net;
 
 
-namespace VijaySales.Tests
+namespace TestProjectXUnitVijaySales.APITests
 {
     public class RemoteWebAPITests
     {
 
         private readonly HttpClient _client;
 
-        public RemoteWebAPITests() {
+        public RemoteWebAPITests()
+        {
             // Initialize HttpClient with the base address of your web API
             _client = new HttpClient { BaseAddress = new Uri("http://localhost:5263/") };
-        
+
         }
 
         [Fact]
