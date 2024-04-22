@@ -2,7 +2,6 @@
 {
     public class MathEngine
     {
-
         public int Addition(int x, int y)
         {
             return  x * y;
@@ -12,6 +11,5 @@
         {
             return x-y;
         }
-
     }
 }

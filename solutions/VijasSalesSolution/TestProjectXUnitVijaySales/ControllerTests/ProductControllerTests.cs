@@ -46,7 +46,7 @@ namespace TestProjectXUnitVijaySales.APIControllerTest
         }
 
         [Fact]
-        public async Task GetAsync_GetProduct()
+        public async Task GetAsync_GetFlower()
         {
             //Arrange
             var controller = new FlowersController();

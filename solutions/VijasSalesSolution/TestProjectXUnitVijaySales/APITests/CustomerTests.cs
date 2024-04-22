@@ -16,14 +16,13 @@ namespace TestProjectXUnitVijaySales.APITests
         public string Location { get; set; }
     }
 
-    public class UnitTestCustomerRemoteWebAPI
+    public class CustomersWebAPICURDTests
     {
         private readonly HttpClient _client;
-
         private const string BaseUrl = "http://localhost:5222/api/customers";
         private readonly HttpClient _httpClient;
 
-        public UnitTestCustomerRemoteWebAPI()
+        public CustomersWebAPICURDTests()
         {
             _httpClient = new HttpClient();
         }
@@ -35,9 +34,6 @@ namespace TestProjectXUnitVijaySales.APITests
             var customer = new Customer { Id = 1, Email = "shiv.narayan@transflower.in", ContactNumber = "9881735801", Location = "Pune" };
 
             // Act
-
-
-
             var response = await _httpClient.PostAsync(BaseUrl,
                                                         new StringContent(JsonConvert.SerializeObject(customer),
                                                         Encoding.UTF8,
@@ -47,6 +43,8 @@ namespace TestProjectXUnitVijaySales.APITests
             response.EnsureSuccessStatusCode();
             Assert.Equal(HttpStatusCode.Created, response.StatusCode);
         }
+
+
 
         [Fact]
         public async Task Can_Get_Customer()

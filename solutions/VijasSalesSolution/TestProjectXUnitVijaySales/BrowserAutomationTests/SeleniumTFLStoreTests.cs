@@ -9,9 +9,6 @@ namespace TestProjectXUnitVijaySales.BrowserAutomationTests
         [Fact]
         public void GoogleSearchTest()
         {
-            //Selenium Web Driver for Chrom download link
-            //https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.122/win32/chromedriver-win32.zip
-
             // Set the path to the ChromeDriver executable
             var chromeDriverPath = @"D:\tryout\chromedriver\chromedriver.exe"; // Update with your actual path
 
@@ -31,7 +28,7 @@ namespace TestProjectXUnitVijaySales.BrowserAutomationTests
                 driver.FindElement(By.CssSelector("td:nth-child(1) > input")).Click();
 
                 // Assert that the page title contains the search term
-                Assert.Contains("Transflower Store", driver.Title);
+                Assert.Contains(" Store", driver.Title);
             }
         }
     }

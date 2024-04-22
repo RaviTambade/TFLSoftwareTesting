@@ -3,18 +3,18 @@ using System.Net.Http.Headers;
 
 namespace TestProjectXUnitVijaySales.APITests
 {
-    public class OrdersAPITests
+    public class SecureOrdersAPITests
     {
         private readonly HttpClient _client;
 
-        public OrdersAPITests()
+        public SecureOrdersAPITests()
         {
             // Initialize HttpClient with the base address of your web API
             _client = new HttpClient { BaseAddress = new Uri("http://localhost:5295/") };
         }
 
         [Fact]
-        public async Task Get_ReturnsSuccessStatusForAbhayUser()
+        public async Task Get_Orders_ReturnsSuccessStatusForAbhayUser()
         {
             // Arrange
             //This token is for user Abhay
@@ -35,20 +35,18 @@ namespace TestProjectXUnitVijaySales.APITests
 
 
         [Fact]
-        public async Task Get_ReturnsSuccessStatusForPragatiUser()
+        public async Task Get_Orders_ReturnsSuccessStatusForPragatiUser()
         {
             // Arrange
             //This token is for user Pragati
-            //string token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250YWN0TnVtYmVyIjoiNzQ5ODAzNTY5MiIsIm5hbWVpZCI6IjEyIiwidW5pcXVlX25hbWUiOiJQcmdhdGlCYW5nZXIiLCJyb2xlIjoiRW1wbG95ZWUiLCJuYmYiOjE3MTM2MDgyMzIsImV4cCI6MTcxMzY5NDYzMiwiaWF0IjoxNzEzNjA4MjMyfQ.6N6hF7Rnvc-knL4oCsG5rKAz_BYHsAYDXd23xASNSEo";
-            string token = "invalid token";
+            string token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb250YWN0TnVtYmVyIjoiODQ1NjEyMzY1NCIsIm5hbWVpZCI6IjEiLCJ1bmlxdWVfbmFtZSI6IkFiaGF5TmF2YWxlIiwicm9sZSI6IkRpcmVjdG9yIiwibmJmIjoxNzEzNzgyNDIwLCJleHAiOjE3MTM4Njg4MjAsImlhdCI6MTcxMzc4MjQyMH0.AwnYobXzxRE-b8MpzgXbn2X1U2ASbTN9Knvx1BMudcU";
+            //string token = "invalid token";
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             // Act
-
             var response = await _client.GetAsync("api/orders");
 
             // Assert
-
             response.EnsureSuccessStatusCode(); // Throws exception if status code isn't success
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }

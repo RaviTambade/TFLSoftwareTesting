@@ -60,8 +60,6 @@ public class CalculatorTests
     }
 
 
-
-
     [Theory]
     [ClassData(typeof(CalculatorTestData))]
     public void CanAddTheorySampleData(int value1, int value2, int expected)
@@ -73,4 +71,18 @@ public class CalculatorTests
         Assert.Equal(expected, result);
     }
 
+
+    [Fact]
+    public async void Get_ProcessRequestAsyncTest()
+    {
+        //Arrange
+        var calculator = new Calculator();
+        int expectedResult = 78;
+
+        //Act
+        int actualResult = await calculator.ProcessRequestAsync();
+
+        //Assert
+        Assert.Equal(expectedResult, actualResult);
+    }
 }

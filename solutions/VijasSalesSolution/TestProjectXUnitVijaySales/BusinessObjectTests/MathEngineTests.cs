@@ -10,7 +10,6 @@ namespace TestProjectXUnitVijaySales.BusinessObjectTests.cs
         public void AdditionTest()
         {
             Assert.Equal(1, 1);
-
         }
 
         [Fact]
