@@ -43,7 +43,7 @@ Various phases of SDLC:
 
     - Once the requirement is clearly understood, the SRS (Software Requirement Specification) document is created. This document should be thoroughly understood by the developers and also should be reviewed by the customer for future reference.
 
-2.<b>Design</b>
+2. <b>Design</b>
     - In this phase, the requirement gathered in the SRS document is used as an input and software architecture that is used for implementing system development is derived.
 
 3. <b>Implementation or Coding</b>
