@@ -1,12 +1,17 @@
-# Test Driven Development (TDD)Test-Driven Development (TDD) is a software development approach in which tests are written before the actual code implementation. It follows a cycle known as the "Red-Green-Refactor" cycle. Here's a breakdown of each phase:
+# Test Driven Development (TDD)
 
-1. **Red**: In this phase, a developer writes a failing test that specifies the desired behavior of the code. The test is written to capture a specific piece of functionality that the developer wants to implement.
+  Test-Driven Development (TDD) is a software development approach in which tests are written before the actual code implementation. It follows a cycle known as the "Red-Green-Refactor" cycle. Here's a breakdown of each phase:
 
-2. **Green**: Once the test is in place, the developer writes the minimum amount of code necessary to make the test pass. This typically involves implementing the functionality or fixing the bug that the test is checking for.
+1. **Red Phase**:
+   - **Write a Failing Test**: In this phase, a developer writes a failing test that specifies the desired behavior of the code. The test is written to capture a specific piece of functionality that the developer wants to implement.
 
-3. **Refactor**: After the test has passed, the developer refactors the code to improve its design, readability, and maintainability while keeping all tests passing. Refactoring may involve restructuring code, extracting common functionality into reusable components, or optimizing performance.
+2. **Green Phase**:
+   - **Write the Minimum Code**: Once the test is in place, the developer writes the minimum amount of code necessary to make the test pass. This typically involves implementing the functionality or fixing the bug that the test is checking for.
 
-This cycle repeats iteratively, with developers writing new tests, implementing code to pass those tests, and then refactoring the code as needed. The goal is to build up a comprehensive suite of automated tests that verify the behavior of the software and ensure that it continues to work correctly as it evolves over time.
+3. **Refactor Phase**:
+   - **Refactor the Code**: After the test has passed, the developer refactors the code to improve its design, readability, and maintainability while keeping all tests passing. Refactoring may involve restructuring code, extracting common functionality into reusable components, or optimizing performance.
+
+This cycle repeats iteratively, with developers writing failing tests, implementing code to make the tests pass, and then refactoring the code as needed. The goal is to build up a comprehensive suite of automated tests that verify the behavior of the software and ensure that it continues to work correctly as it evolves over time.
 
 TDD offers several benefits:
 
@@ -19,7 +24,6 @@ TDD offers several benefits:
 4. **Living Documentation**: Tests act as executable specifications that describe the intended behavior of the software components. They serve as living documentation that is always up-to-date and can be used to understand the system's behavior and requirements.
 
 Overall, Test-Driven Development (TDD) promotes a disciplined and iterative approach to software development, enabling developers to deliver high-quality, reliable, and maintainable code.
-
 
 ## Applying TDD approach for ECommerce Application
 
