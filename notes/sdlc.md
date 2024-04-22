@@ -44,7 +44,7 @@ Various phases of SDLC:
     - Once the requirement is clearly understood, the SRS (Software Requirement Specification) document is created. This document should be thoroughly understood by the developers and also should be reviewed by the customer for future reference.
 
 2.<b>Design</b>
-    In this phase, the requirement gathered in the SRS document is used as an input and software architecture that is used for implementing system development is derived.
+    - In this phase, the requirement gathered in the SRS document is used as an input and software architecture that is used for implementing system development is derived.
 
 3. <b>Implementation or Coding</b>
     - Implementation/Coding starts once the developer gets the Design document. The Software design is translated into source code. All the components of the software are implemented in this phase.
@@ -54,7 +54,7 @@ Various phases of SDLC:
 
     - Retesting, regression testing is done until the point at which the software is as per the customer’s expectation. Testers refer SRS document to make sure that the software is as per the customer’s standard.
 
-5.<b>Deployment</b>
+5. <b>Deployment</b>
     - Once the product is tested, it is deployed in the production environment or first UAT (User Acceptance testing) is done depending on the customer expectation. In the case of UAT, a replica of the production environment is created and the customer along with the developers does the testing. If the customer finds the application as expected, then sign off is provided by the customer to go live.
 
 6. <b>Maintenance</b>
