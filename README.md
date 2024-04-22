@@ -5,7 +5,7 @@ Software testing is the process of executing a program or application with the i
 - <a href="https://github.com/RaviTambade/softwaretesting/blob/main/notes/softwaretesting.md">Software Testing</a>
 - <a href="https://github.com/RaviTambade/softwaretesting/blob/main/notes/softwaretestingtrends.md">Software Testing Trends</a>
 - <a href="https://github.com/RaviTambade/softwaretesting/blob/main/notes/softwaretestingroles.md">Software Testing Roles and Responsibilities</a>
-- <a href="https://github.com/RaviTambade/softwaretesting/blob/main/notes/sdlc.md">Software Development Life Cycle</a>
+- <a href="https://github.com/RaviTambade/softwaretesting/blob/main/notes/sdlc.md">Software Development Life Cycle (SDLC)</a>
 - <a href="https://github.com/RaviTambade/softwaretesting/blob/main/notes/stlc.md">Software Testing Life Cycle (STLC)</a>
 - <a href="https://github.com/RaviTambade/softwaretesting/blob/main/notes/sdlc_vs_stlc.md">SDLC Vs. STLC</a>
 - <a href="https://github.com/RaviTambade/softwaretesting/blob/main/notes/testplan.md">Test Plan</a>

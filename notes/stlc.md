@@ -1,7 +1,9 @@
 
 # Software Testing Life Cycle (STLC)
 
-Software Testing Life Cycle (STLC) is a systematic approach to testing software applications that ensures thoroughness, efficiency, and effectiveness in the testing process. It consists of several phases, each with its own set of activities and objectives. Here's an overview of the typical phases in the Software Testing Life Cycle:
+Software Testing Life Cycle (STLC) is a systematic approach to testing software applications that ensures thoroughness, efficiency, and effectiveness in the testing process. It consists of several phases, each with its own set of activities and objectives. 
+
+Here's an overview of the typical phases in the Software Testing Life Cycle:
 
 1. **Requirement Analysis**: In this phase, testers analyze the requirements documentation to understand the features, functionalities, and business rules of the software application. They identify testable requirements and create a test plan that outlines the testing approach, objectives, scope, resources, and schedule.
 
