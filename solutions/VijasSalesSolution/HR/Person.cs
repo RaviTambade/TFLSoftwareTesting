@@ -11,5 +11,10 @@
             Person secondPerson = obj as Person;
             return secondPerson.Age.CompareTo(Age);
         }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

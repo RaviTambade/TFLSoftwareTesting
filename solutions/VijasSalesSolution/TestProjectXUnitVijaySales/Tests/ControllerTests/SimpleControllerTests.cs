@@ -2,7 +2,7 @@ using MathLib;
 using ShoppingCartAPI.Controllers;
 
 
-namespace TestProjectXUnitVijaySales.APIControllerTest
+namespace TestProjectXUnitVijaySales.Tests.ControllerTests
 {
     public class SimpleControllerTests
     {

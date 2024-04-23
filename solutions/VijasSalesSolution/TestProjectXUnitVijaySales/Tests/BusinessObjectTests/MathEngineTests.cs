@@ -1,6 +1,6 @@
 using MathLib;
 
-namespace TestProjectXUnitVijaySales.BusinessObjectTests.cs
+namespace TestProjectXUnitVijaySales.Tests.BusinessObjectTests
 {
 
     //Testing Reusable Libraries

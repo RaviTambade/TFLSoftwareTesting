@@ -38,9 +38,7 @@
         public int CompareTo(object? obj)
         {
             Product secondObject= obj as Product;
-          
             return secondObject.StockAvailable.CompareTo(StockAvailable);
-           
         }
     }
 }

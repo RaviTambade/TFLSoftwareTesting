@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestProjectXUnitVijaySales.BusinessLogicTests
+namespace TestProjectXUnitVijaySales.Tests.BusinessLogicTests
 {
-    public  class ProductManagerTests
+    public class ProductManagerTests
     {
         [Fact]
         public void GetAllProductsByProductManagerTest()
         {
             //Arrange
-           
+
             List<Product> expectedProducts = new List<Product>();
             expectedProducts.Add(new Product("Jasmine", "Smelling Flower", "flowers", 4500, 12));
             expectedProducts.Add(new Product("Tulip", "Delicate Flower", "flowers", 5400, 10));

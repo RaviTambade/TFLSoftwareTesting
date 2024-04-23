@@ -2,11 +2,11 @@ using MathLib;
 using CatalogAPI.Controllers;
 using ProductCatalog.Entities;
 
-namespace TestProjectXUnitVijaySales.APIControllerTest
+namespace TestProjectXUnitVijaySales.Tests.ControllerTests
 {
     public class FlowersControllerTests
     {
-           
+
         [Fact]
         public async Task GetAsync_GetProduct()
         {

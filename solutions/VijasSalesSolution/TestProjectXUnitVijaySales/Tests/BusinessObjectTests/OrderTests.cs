@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TestProjectXUnitVijaySales.Utility;
 
-namespace TestProjectXUnitVijaySales.BusinessObjectTests.cs
+namespace TestProjectXUnitVijaySales.Tests.BusinessObjectTests
 {
     public class TestOrderProcessing
     {

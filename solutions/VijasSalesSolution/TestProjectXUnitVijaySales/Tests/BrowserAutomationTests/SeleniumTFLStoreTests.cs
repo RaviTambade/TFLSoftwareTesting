@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using Xunit;
 
-namespace TestProjectXUnitVijaySales.BrowserAutomationTests
+namespace TestProjectXUnitVijaySales.Tests.BrowserAutomationTests
 {
     public class SeleniumTests
     {
@@ -20,7 +20,7 @@ namespace TestProjectXUnitVijaySales.BrowserAutomationTests
                 // Navigate to Google
                 driver.Navigate().GoToUrl("http://localhost:8000/");
                 driver.Manage().Window.Size = new System.Drawing.Size(1366, 728);
-              
+
                 driver.FindElement(By.LinkText("Gallery")).Click();
                 driver.FindElement(By.Id("1")).Click();
                 driver.FindElement(By.CssSelector("button")).Click();

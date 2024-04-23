@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using ProductCatalog.Entities;
 using TestProjectXUnitVijaySales.Utility;
 
-namespace TestProjectXUnitVijaySales.BusinessObjectTests.cs
+namespace TestProjectXUnitVijaySales.Tests.BusinessObjectTests
 {
 
     //Object Layer unit Test
