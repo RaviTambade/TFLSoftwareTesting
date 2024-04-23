@@ -29,7 +29,7 @@ namespace TestProjectXUnitVijaySales.Utility
         public static List<Person> GetSampleDataFromCSV()
         {
             // Read data from the file
-            string fileName = @"D:/Ravi/TAP/TAP/softwaretesting/solutions/VijasSalesSolution/TestProjectXUnitVijaySales/TestingSampleData/people.csv";
+            string fileName = @"D:/Ravi/TAP/TAP/softwaretesting/solutions/VijasSalesSolution/TestProjectXUnitVijaySales/SampleData/people.csv";
 
             List<Person> people = new List<Person>();
 

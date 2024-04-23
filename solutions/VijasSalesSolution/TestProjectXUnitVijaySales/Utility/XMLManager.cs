@@ -12,11 +12,11 @@ namespace TestProjectXUnitVijaySales.Utility
 
         public List<Person> GetXmlSampleData()
         {
-            string fileName = @"D:/Ravi/TAP/TAP/softwaretesting/solutions/VijasSalesSolution/TestProjectXUnitVijaySales/TestingSampleData/people.xml";
+            string fileName = @"D:/Ravi/TAP/TAP/softwaretesting/solutions/VijasSalesSolution/TestProjectXUnitVijaySales/SampleData/people.xml";
             List<Person> people = new List<Person>();
             using (FileStream stream = new FileStream(fileName, FileMode.Open))
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(Person));
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Person>));
                 people = serializer.Deserialize(stream) as List<Person>;
             }
             return people;
@@ -37,7 +37,7 @@ namespace TestProjectXUnitVijaySales.Utility
 
             using (FileStream stream = new FileStream(fileName, FileMode.OpenOrCreate))
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(Person));
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Person>));
                 serializer.Serialize(stream, list);
             }
             status=true;
