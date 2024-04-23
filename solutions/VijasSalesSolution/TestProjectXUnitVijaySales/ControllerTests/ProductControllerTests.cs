@@ -13,7 +13,7 @@ namespace TestProjectXUnitVijaySales.APIControllerTest
             var controller = new ProductsController();
 
             //Sample Data 
-            Product expectedProduct = new Product("Rose", "Smelling Flower", "flowers");
+            Product expectedProduct = new Product("Rose", "Smelling Flower", "flowers", 4500, 12);
             int id = 45;
 
             //Act
@@ -32,11 +32,10 @@ namespace TestProjectXUnitVijaySales.APIControllerTest
 
             //Sample Data 
             List<Product> expectedProducts = new List<Product>();
-            expectedProducts.Add(new Product("Jasmine", "Smelling Flower", "flowers"));
-            expectedProducts.Add(new Product("Tulip", "Delicate Flower", "flowers"));
-            expectedProducts.Add(new Product("Marigold", "Festival Flower", "flowers"));
-            expectedProducts.Add(new Product("Lotus", "Worship Flower", "flowers"));
-
+            expectedProducts.Add(new Product("Jasmine", "Smelling Flower", "flowers", 4500, 12));
+            expectedProducts.Add(new Product("Tulip", "Delicate Flower", "flowers", 5400, 10));
+            expectedProducts.Add(new Product("Marigold", "Festival Flower", "flowers", 45000, 1));
+            expectedProducts.Add(new Product("Lotus", "Worship Flower", "flowers", 3400, 24));
             //Act
             var actualProducts = controller.GetAll();
 
@@ -51,7 +50,7 @@ namespace TestProjectXUnitVijaySales.APIControllerTest
             //Arrange
             var controller = new FlowersController();
             int id = 45;
-            Product expectedProduct = new Product("Jasmine", "Smelling Flower", "flowers");
+            Product expectedProduct = new Product("Jasmine", "Smelling Flower", "flowers", 4500, 12);
 
             //Act
             var actualProduct = await controller.GetByIdAsync(id);

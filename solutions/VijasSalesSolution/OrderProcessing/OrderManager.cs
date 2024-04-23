@@ -4,7 +4,6 @@ namespace OrderProcessing.Repositories
 {
     public class OrderManager
     {
-
         public static List<Order> GetAll()
         {
             var orders = new List<Order>();

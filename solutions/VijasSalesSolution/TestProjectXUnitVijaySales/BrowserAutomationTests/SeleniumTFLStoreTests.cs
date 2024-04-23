@@ -20,6 +20,7 @@ namespace TestProjectXUnitVijaySales.BrowserAutomationTests
                 // Navigate to Google
                 driver.Navigate().GoToUrl("http://localhost:8000/");
                 driver.Manage().Window.Size = new System.Drawing.Size(1366, 728);
+              
                 driver.FindElement(By.LinkText("Gallery")).Click();
                 driver.FindElement(By.Id("1")).Click();
                 driver.FindElement(By.CssSelector("button")).Click();
@@ -29,6 +30,9 @@ namespace TestProjectXUnitVijaySales.BrowserAutomationTests
 
                 // Assert that the page title contains the search term
                 Assert.Contains(" Store", driver.Title);
+
+
+
             }
         }
     }

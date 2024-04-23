@@ -27,8 +27,6 @@ namespace TestProjectXUnitVijaySales.BusinessObjectTests.cs
             Assert.Equal(6000, product.StockAvailable);
             // Assuming there are three products in the database
             //Assert.NotEmpty(product);  //It is used for collection  tests
-
         }
-
     }
 }

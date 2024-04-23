@@ -44,8 +44,6 @@ namespace TestProjectXUnitVijaySales.APITests
             Assert.Equal(HttpStatusCode.Created, response.StatusCode);
         }
 
-
-
         [Fact]
         public async Task Can_Get_Customer()
         {
@@ -69,7 +67,8 @@ namespace TestProjectXUnitVijaySales.APITests
                                                        "application/json"));
             // Assert
             response.EnsureSuccessStatusCode();
-            Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+            // Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
         }
 
         [Fact]
@@ -83,7 +82,7 @@ namespace TestProjectXUnitVijaySales.APITests
 
             // Assert
             response.EnsureSuccessStatusCode();
-            Assert.Equal(HttpStatusCode.NoContent, response.StatusCode);
+            Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
 
     }

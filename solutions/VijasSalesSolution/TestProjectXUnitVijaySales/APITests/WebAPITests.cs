@@ -26,6 +26,5 @@ namespace TestProjectXUnitVijaySales.APITests
             response.EnsureSuccessStatusCode(); // Throws exception if status code isn't success
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
-
     }
 }

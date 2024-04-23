@@ -60,7 +60,7 @@ namespace CatalogAPI.Controllers
             existingCustomer.Email = updatedCustomer.Email;
             existingCustomer.ContactNumber = updatedCustomer.ContactNumber;
             existingCustomer.Location= updatedCustomer.Location;
-            return NoContent();
+            return this.Ok();
         }
 
         // DELETE: api/customers/5
@@ -73,7 +73,7 @@ namespace CatalogAPI.Controllers
                 return NotFound();
             }
             _customers.Remove(customerToRemove);
-            return NoContent();
+            return Ok();
         }
     }
 }

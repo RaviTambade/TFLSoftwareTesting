@@ -12,10 +12,10 @@ namespace ProductCatalog.Repositories
         public static List<Product> GetAll()
         {
             var products = new List<Product>();
-            products.Add(new Product("Jasmine", "Smelling Flower", "flowers"));
-            products.Add(new Product("Tulip", "Delicate Flower", "flowers"));
-            products.Add(new Product("Marigold", "Festival Flower", "flowers"));
-            products.Add(new Product("Lotus", "Worship Flower", "flowers"));
+            products.Add(new Product("Jasmine", "Smelling Flower", "flowers",4500,12));
+            products.Add(new Product("Tulip", "Delicate Flower", "flowers",5400,10));
+            products.Add(new Product("Marigold", "Festival Flower", "flowers", 45000, 1));
+            products.Add(new Product("Lotus", "Worship Flower", "flowers",3400,24));
             return products;
         }
 
@@ -24,7 +24,7 @@ namespace ProductCatalog.Repositories
             //database code will take input as id 
             //that will search product with id 
             //product will be returned
-            Product product=new Product("Rose", "Smelling Flower", "flowers");
+            Product product=new Product("Jasmine", "Smelling Flower", "flowers", 4500, 12);
             return product;
         }
 

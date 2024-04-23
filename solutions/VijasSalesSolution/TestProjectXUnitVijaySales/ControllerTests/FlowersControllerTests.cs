@@ -13,7 +13,7 @@ namespace TestProjectXUnitVijaySales.APIControllerTest
             //Arrange
             var controller = new FlowersController();
             int id = 45;
-            Product expectedProduct = new Product("Jasmine", "Smelling Flower", "flowers");
+            Product expectedProduct = new Product("Jasmine", "Smelling Flower", "flowers", 4500, 12);
 
             //Act
             var actualProduct = await controller.GetByIdAsync(id);

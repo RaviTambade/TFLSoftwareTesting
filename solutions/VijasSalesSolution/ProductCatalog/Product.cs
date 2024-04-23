@@ -26,11 +26,13 @@
             Description = "Wedding Flower";
             Category = "flowers";
         }
-        public Product(string name, string description, string category)
+        public Product(string name, string description, string category, int stock, float unitPrice)
         {
             Name = name;
             Description = description;
             Category = category;
+            StockAvailable = stock;
+            UnitPrice = unitPrice;
         }
 
         public int CompareTo(object? obj)
