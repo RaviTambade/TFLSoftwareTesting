@@ -13,9 +13,8 @@ using HR.Entities;
 
 namespace VijaySales.Tests.APITests
 {
-   
 
-        public class ProductsAPITests 
+    public class ProductsAPITests 
         {
         
 
@@ -34,21 +33,21 @@ namespace VijaySales.Tests.APITests
             {
                 // Arrange
                 List<Product> expectedProducts = new List<Product>();
-                expectedProducts.Add(new Product("Jasmine", "Smelling Flower", "flowers", 4500, 12));
-                expectedProducts.Add(new Product("Tulip", "Delicate Flower", "flowers", 5400, 10));
-                expectedProducts.Add(new Product("Marigold", "Festival Flower", "flowers", 45000, 1));
-                expectedProducts.Add(new Product("Lotus", "Worship Flower", "flowers", 3400, 24));
+                expectedProducts.Add(new Product { Name = "Jasmine", Description = "Smelling Flower", Category = "flowers", StockAvailable = 4500, UnitPrice = 12 });
+                expectedProducts.Add(new Product { Name = "Jaae", Description = "Smelling Flower", Category = "flowers", StockAvailable = 78, UnitPrice = 12 });
+                expectedProducts.Add(new Product { Name = "Tulip", Description = "Smelling Flower", Category = "flowers", StockAvailable = 4500, UnitPrice = 12 });
+                expectedProducts.Add(new Product { Name = "Lotus", Description = "Smelling Flower", Category = "flowers", StockAvailable = 4500, UnitPrice = 12 });
+                expectedProducts.Add(new Product { Name = "Marigold", Description = "Smelling Flower", Category = "flowers", StockAvailable = 4500, UnitPrice = 12 });
+
 
                 // Act
                 var response = await _httpClient.GetAsync(BaseUrl);
                 response.EnsureSuccessStatusCode();
 
-         
-                var content=await response.Content.ReadAsStringAsync();
-                List<Product> resultProducts = JsonSerializer.Deserialize<List<Product>>(content);
+                 var content=await response.Content.ReadAsStringAsync();
+                 List<Product> resultProducts = JsonSerializer.Deserialize<List<Product>>(content);
 
-                // Assert
-               // Assert.NotNull(resultProducts);
+       
                 Assert.Equal(expectedProducts, resultProducts);
             }
         }

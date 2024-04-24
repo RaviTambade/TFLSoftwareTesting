@@ -54,10 +54,7 @@ namespace TestApp.Repositories
         {
             // Arrange
             List<Product> expectedProducts = new List<Product>();
-            expectedProducts.Add(new Product("Jasmine", "Smelling Flower", "flowers", 4500, 12));
-            expectedProducts.Add(new Product("Tulip", "Delicate Flower", "flowers", 5400, 10));
-            expectedProducts.Add(new Product("Marigold", "Festival Flower", "flowers", 45000, 1));
-            expectedProducts.Add(new Product("Lotus", "Worship Flower", "flowers", 3400, 24));
+
 
             // Act
             HttpClient _client;

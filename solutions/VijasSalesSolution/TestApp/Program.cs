@@ -4,10 +4,11 @@ using System.Text.Json;
 
 // Arrange
 List<Product> expectedProducts = new List<Product>();
-expectedProducts.Add(new Product("Jasmine", "Smelling Flower", "flowers", 4500, 12));
-expectedProducts.Add(new Product("Tulip", "Delicate Flower", "flowers", 5400, 10));
-expectedProducts.Add(new Product("Marigold", "Festival Flower", "flowers", 45000, 1));
-expectedProducts.Add(new Product("Lotus", "Worship Flower", "flowers", 3400, 24));
+expectedProducts.Add(new Product { Name = "Jasmine", Description = "Smelling Flower", Category = "flowers", StockAvailable = 4500, UnitPrice = 12 });
+expectedProducts.Add(new Product { Name = "Rose", Description = "Smelling Flower", Category = "flowers", StockAvailable = 4500, UnitPrice = 12 });
+expectedProducts.Add(new Product { Name = "Tulip", Description = "Smelling Flower", Category = "flowers", StockAvailable = 4500, UnitPrice = 12 });
+expectedProducts.Add(new Product { Name = "Lotus", Description = "Smelling Flower", Category = "flowers", StockAvailable = 4500, UnitPrice = 12 });
+expectedProducts.Add(new Product { Name = "Marigold", Description = "Smelling Flower", Category = "flowers", StockAvailable = 4500, UnitPrice = 12 });
 
 // Act
 HttpClient _client;
@@ -19,8 +20,10 @@ response.EnsureSuccessStatusCode();
 
 var content = await response.Content.ReadAsStringAsync();
 Console.WriteLine(content);
+
 List<Product> resultProducts = JsonSerializer.Deserialize<List<Product>>(content);
+
 foreach( Product p in resultProducts)
 {
-    Console.WriteLine(p.Name+ " "+ p.Description+ " "+ p.StockAvailable+ " "+ p.UnitPrice);   
+    Console.WriteLine(p.Name + "  "+ p.Description +"  " + p.Category);
 }

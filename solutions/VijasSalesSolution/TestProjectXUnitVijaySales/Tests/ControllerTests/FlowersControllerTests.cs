@@ -13,8 +13,8 @@ namespace VijaySales.Tests.ControllerTests
             //Arrange
             var controller = new FlowersController();
             int id = 45;
-            Product expectedProduct = new Product("Jasmine", "Smelling Flower", "flowers", 4500, 12);
-
+             Product expectedProduct= new Product { Name = "Jasmine", Description = "Smelling Flower", Category = "flowers", StockAvailable = 4500, UnitPrice = 12 };
+             
             //Act
             var actualProduct = await controller.GetByIdAsync(id);
 

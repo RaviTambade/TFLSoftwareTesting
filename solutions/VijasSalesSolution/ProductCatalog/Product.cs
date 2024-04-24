@@ -2,40 +2,25 @@
 
 namespace ProductCatalog.Entities
 {
-    //Multi-Layer Application
-
-    //UI layer
-    //-----Web API
-    //          Controllers ----DI
-    //------------Service Layer
-    //------------------Business Logic Layer
-    //-----------------------Object Layer--Repository (DAL)
-    //-------------------------------------------Data Layer (MySQL)
-
-    //Object Layer Class (BOL)
     [Serializable]
     public class Product:IComparable
     {
-      
-        //Properties
+        [JsonPropertyName("name")]
         public string Name { get; set; }
-        public string Description { get; set; }
-        public string Category { get; set; }
-        public int StockAvailable { get; set; }
-        public float UnitPrice {  get; set; }
 
-        public Product()
-        {
-      
-        }
-        public Product(string name, string description, string category, int stock, float unitPrice)
-        {
-            Name = name;
-            Description = description;
-            Category = category;
-            StockAvailable = stock;
-            UnitPrice = unitPrice;
-        }
+        [JsonPropertyName("description")]
+        public string Description { get; set; }
+
+
+        [JsonPropertyName("category")]
+        public string Category { get; set; }
+
+
+        [JsonPropertyName("stockavailable")]
+        public int StockAvailable { get; set; }
+
+        [JsonPropertyName("unitprice")]
+        public float UnitPrice {  get; set; }
 
         public int CompareTo(object? obj)
         {
