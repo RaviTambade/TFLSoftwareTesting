@@ -17,7 +17,6 @@ namespace CatalogAPI.Controllers
             _customers.Add(new Customer { Id = 15, Email = "manish.patil@transflower.in", Location = "Nagpur", ContactNumber = "9227658384" });
             _customers.Add(new Customer { Id = 16, Email = "sham.more@transflower.in", Location = "Nashik", ContactNumber = "9223659496" });
             _customers.Add(new Customer { Id = 17, Email = "karan.kapoor@transflower.in", Location = "Kolhapur", ContactNumber = "9223658764" });
-
         }
 
         // GET: api/customers

@@ -2,12 +2,12 @@
 using OpenQA.Selenium.Chrome;
 using Xunit;
 
-namespace TestProjectXUnitVijaySales.Tests.BrowserAutomationTests
+namespace VijaySales.Tests.SeleniumAutomationTests
 {
     public class SeleniumTests
     {
         [Fact]
-        public void GoogleSearchTest()
+        public void ShoppingCartExperienceTest()
         {
             // Set the path to the ChromeDriver executable
             var chromeDriverPath = @"D:\tryout\chromedriver\chromedriver.exe"; // Update with your actual path

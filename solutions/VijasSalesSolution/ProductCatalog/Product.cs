@@ -1,4 +1,6 @@
-﻿namespace ProductCatalog.Entities
+﻿using System.Text.Json.Serialization;
+
+namespace ProductCatalog.Entities
 {
     //Multi-Layer Application
 
@@ -11,8 +13,10 @@
     //-------------------------------------------Data Layer (MySQL)
 
     //Object Layer Class (BOL)
+    [Serializable]
     public class Product:IComparable
     {
+      
         //Properties
         public string Name { get; set; }
         public string Description { get; set; }
@@ -22,9 +26,7 @@
 
         public Product()
         {
-            Name = "gerbera";
-            Description = "Wedding Flower";
-            Category = "flowers";
+      
         }
         public Product(string name, string description, string category, int stock, float unitPrice)
         {

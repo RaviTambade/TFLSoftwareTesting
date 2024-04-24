@@ -11,9 +11,10 @@ namespace CatalogAPI.Controllers
     {
         private readonly ILogger<ProductsController> _logger;
 
-        public ProductsController()
+      /*  public ProductsController()
         {
         }
+      */
 
         public ProductsController(ILogger<ProductsController> logger)
         {

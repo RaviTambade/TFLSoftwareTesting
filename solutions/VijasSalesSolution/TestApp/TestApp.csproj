@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CatalogAPI\CatalogAPI.csproj" />
     <ProjectReference Include="..\HR\HR.csproj" />
   </ItemGroup>
 

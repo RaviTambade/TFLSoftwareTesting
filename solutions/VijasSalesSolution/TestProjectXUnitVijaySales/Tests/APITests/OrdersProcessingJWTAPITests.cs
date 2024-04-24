@@ -1,7 +1,8 @@
+using Microsoft.AspNetCore.Hosting;
 using System.Net;
 using System.Net.Http.Headers;
 
-namespace TestProjectXUnitVijaySales.Tests.APITests
+namespace VijaySales.Tests.APITests
 {
     public class SecureOrdersAPITests
     {
@@ -54,5 +55,5 @@ namespace TestProjectXUnitVijaySales.Tests.APITests
             response.EnsureSuccessStatusCode(); // Throws exception if status code isn't success
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         }
-    }
+}
 }

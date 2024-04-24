@@ -1,6 +1,6 @@
 using MathLib;
 
-namespace TestProjectXUnitVijaySales.Tests.BusinessObjectTests
+namespace VijaySales.Tests.MathsTests
 {
 
     //Testing Reusable Libraries

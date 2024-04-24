@@ -2,7 +2,7 @@ using MathLib;
 using CatalogAPI.Controllers;
 using ProductCatalog.Entities;
 
-namespace TestProjectXUnitVijaySales.Tests.ControllerTests
+namespace VijaySales.Tests.ControllerTests
 {
     public class FlowersControllerTests
     {

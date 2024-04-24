@@ -1,7 +1,7 @@
 using System.Net;
 
 
-namespace TestProjectXUnitVijaySales.Tests.APITests
+namespace VijaySales.Tests.APITests
 {
     public class RemoteWebAPITests
     {

@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectVijaySales", "Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectMSVijaySales", "TestProjectMSVijaySales\TestProjectMSVijaySales.csproj", "{F77DA0F2-43C4-4573-ACDD-0DA8E30ACAA1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectXUnitVijaySales", "TestProjectXUnitVijaySales\TestProjectXUnitVijaySales.csproj", "{5ABA6F78-E6A1-4175-B898-53DC20F1B484}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VijaySalesXunitTest", "TestProjectXUnitVijaySales\VijaySalesXunitTest.csproj", "{5ABA6F78-E6A1-4175-B898-53DC20F1B484}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathLib", "MathLib\MathLib.csproj", "{F1B4F84A-0970-4AE4-B34E-106A7678EABA}"
 EndProject
@@ -29,9 +29,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{92327B9F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderProcessing", "OrderProcessing\OrderProcessing.csproj", "{B5D5E62E-2E3B-4E7E-8888-202B0B9ECD21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR", "HR\HR.csproj", "{C5B2BCD4-039B-4650-9364-1792DEBE3F99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HR", "HR\HR.csproj", "{C5B2BCD4-039B-4650-9364-1792DEBE3F99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{200F1005-FBFF-484A-B7CA-B7EFD27C3AD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "TestApp\TestApp.csproj", "{200F1005-FBFF-484A-B7CA-B7EFD27C3AD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

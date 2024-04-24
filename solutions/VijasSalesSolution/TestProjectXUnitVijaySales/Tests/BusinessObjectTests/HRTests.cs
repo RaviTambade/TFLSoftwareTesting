@@ -8,7 +8,7 @@ using TestProjectXUnitVijaySales.Utility;
 using HR.Entities;
 using HR.Respositories;
 
-namespace TestProjectXUnitVijaySales.Tests.BusinessObjectTests
+namespace VijaySales.Tests.BusinessObjectTests
 {
     public class HRTests
     {

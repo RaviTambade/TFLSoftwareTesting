@@ -6,7 +6,7 @@ using System.Text;
 using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
 
-namespace TestProjectXUnitVijaySales.Tests.APITests
+namespace VijaySales.Tests.APITests
 {
     public class Customer
     {
