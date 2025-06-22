@@ -15,10 +15,7 @@ namespace VijaySales.Tests.APITests
 {
 
     public class ProductsAPITests 
-        {
-        
-
-        
+        {    
             private const string BaseUrl = "http://localhost:5222/products";
             private readonly HttpClient _httpClient;
 
@@ -44,12 +41,9 @@ namespace VijaySales.Tests.APITests
                 var response = await _httpClient.GetAsync(BaseUrl);
                 response.EnsureSuccessStatusCode();
 
-                 var content=await response.Content.ReadAsStringAsync();
-                 List<Product> resultProducts = JsonSerializer.Deserialize<List<Product>>(content);
-
-       
+                var content=await response.Content.ReadAsStringAsync();
+                List<Product> resultProducts = JsonSerializer.Deserialize<List<Product>>(content);
                 Assert.Equal(expectedProducts, resultProducts);
             }
         }
     }
- 

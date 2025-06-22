@@ -23,6 +23,7 @@ namespace OrderProcessingAPI.Controllers
         [HttpGet]
         public IEnumerable<Order> GetAll()
         {
+            _logger.Log(LogLevel.Information,"Get Method is called.");
             List<Order> orders = OrderManager.GetAll();
             return orders;
         }
@@ -31,6 +32,7 @@ namespace OrderProcessingAPI.Controllers
         [HttpGet("{id}")]
         public Order GetById(int id)
         {
+            _logger.Log(LogLevel.Information, "GetById Method is called.");
             Order theOrder = OrderManager.GetById(id);
             return theOrder;
         }

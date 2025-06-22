@@ -29,11 +29,20 @@ namespace CatalogAPI.Controllers
             return products;
         }
 
-        [HttpGet("{id}")]
-        public async Task<Product> GetByIdAsync(int id)
+        [HttpGet]
+        public async Task<IEnumerable<Product>> GetAllFlowers()
         {
-            //Simulating an Asynchronous Operation
-            await Task.Delay(100);   //Simulating a delay
+            await Task.Delay(100);
+            List<Product> products = ProductManager.GetAll();
+            return products;
+        }
+
+
+        [HttpGet("{id}")]
+        public async  Task<Product> GetByIdAsync(int id)
+        {
+            //Si
+            await Task.Delay(1000);
 
            Product theProduct = ProductManager.GetById(id);
             return theProduct;

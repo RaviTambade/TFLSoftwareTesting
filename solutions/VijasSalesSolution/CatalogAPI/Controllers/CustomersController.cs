@@ -1,7 +1,7 @@
-﻿using CatalogAPI.Models;
+﻿using CatalogAPI.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 
- 
+
 namespace CatalogAPI.Controllers
 {
     [Route("api/[controller]")]

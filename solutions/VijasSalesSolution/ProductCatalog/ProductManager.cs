@@ -51,7 +51,6 @@ namespace ProductCatalog.Repositories
             List<Product> products = GetAll();
             //logic to remove product from collection
             return true;
-
         }
     }
 }

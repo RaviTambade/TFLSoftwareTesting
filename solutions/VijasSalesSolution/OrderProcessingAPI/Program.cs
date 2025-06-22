@@ -40,10 +40,6 @@ builder.Services
     .ValidateDataAnnotations()
     .ValidateOnStart();
 
-
-
-
-
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 app.UseCors(a => a.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
