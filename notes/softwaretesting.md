@@ -136,78 +136,8 @@ Then testing isn’t optional — it’s **essential**.
 
 
 
-## Types of Testing : Mannual and automation testing
-Testing can broadly be categorized into two main types: manual testing and automation testing.
-
-**1. Manual Testing**:
-   Manual testing involves the execution of test cases and scenarios by human testers without the use of automated tools or scripts. Testers interact directly with the software application to validate its functionality, user interface, and usability. Manual testing includes various types of testing such as:
-   - **Exploratory Testing**: Testing where testers explore the software to discover defects, without predefined test cases.
-   - **Ad-hoc Testing**: Informal testing carried out without any formal test plan or documentation.
-   - **Usability Testing**: Evaluating the software from the perspective of end-users to assess its ease of use and user experience.
-   - **User Acceptance Testing (UAT)**: Testing conducted by end-users to validate that the software meets their requirements and expectations.
-   - **Regression Testing**: Verifying that recent changes or enhancements to the software have not adversely affected existing functionality.
-   - **Smoke Testing**: Conducting basic tests on the software to verify that critical functionalities work correctly before more in-depth testing is performed.
-   Manual testing requires human intervention for test execution, which can be time-consuming and may not be suitable for repetitive or large-scale testing.
-
-**2. Automation Testing**:
-   Automation testing involves the use of specialized tools and scripts to automate the execution of test cases and scenarios. Test scripts are created to simulate user interactions with the software, and automated tools execute these scripts to perform testing activities. Automation testing offers several advantages, including:
-   - **Efficiency**: Automation testing can execute test cases much faster than manual testing, making it suitable for repetitive and large-scale testing.
-   - **Consistency**: Automated tests produce consistent and repeatable results, reducing the likelihood of human errors.
-   - **Reusability**: Test scripts can be reused across different test cycles and environments, saving time and effort.
-   - **Comprehensive Coverage**: Automation testing can cover a wide range of test scenarios and configurations, improving test coverage.
-   - **Regression Testing**: Automated tests can quickly verify that recent changes have not introduced new defects or regressions.
-   Common types of automation testing include:
-     - **Functional Testing**: Verifying that the software functions correctly according to its specifications.
-     - **Performance Testing**: Assessing the software's responsiveness, scalability, and reliability under various load conditions.
-     - **API Testing**: Validating the functionality and performance of application programming interfaces (APIs).
-     - **Integration Testing**: Testing the interaction between different modules or components of the software.
-     - **GUI Testing**: Verifying the graphical user interface (GUI) elements and interactions of the software.
-   Automation testing requires initial investment in test script development and maintenance but can yield significant long-term benefits in terms of efficiency and reliability.
-
-In practice, both manual testing and automation testing have their roles and strengths, and organizations often use a combination of both to achieve comprehensive test coverage and ensure software quality.
 
 
-## Test Cases
-Sure! Let's consider an example of an eCommerce solution, like an online retail platform. Below are some example test cases for various aspects of such a system:
-
-1. **User Registration and Login**:
-   - Test Case 1: Verify that a new user can successfully register with valid credentials.
-   - Test Case 2: Verify that a user cannot register with invalid or duplicate email addresses.
-   - Test Case 3: Verify that a registered user can log in with correct credentials.
-   - Test Case 4: Verify that a user cannot log in with incorrect credentials.
-   - Test Case 5: Verify that the system displays appropriate error messages for registration and login failures.
-
-2. **Product Search and Navigation**:
-   - Test Case 6: Verify that users can search for products using different search criteria (e.g., keyword, category, price range).
-   - Test Case 7: Verify that search results are relevant and displayed correctly.
-   - Test Case 8: Verify that users can navigate through product categories and subcategories.
-   - Test Case 9: Verify that users can view product details, including images, descriptions, and prices.
-   - Test Case 10: Verify that users can add products to their shopping cart from the product details page or search results.
-
-3. **Shopping Cart and Checkout**:
-   - Test Case 11: Verify that users can view the contents of their shopping cart.
-   - Test Case 12: Verify that users can update the quantity or remove items from their shopping cart.
-   - Test Case 13: Verify that users can proceed to checkout and enter shipping and billing information.
-   - Test Case 14: Verify that users can select different shipping and payment options.
-   - Test Case 15: Verify that users can complete the checkout process and receive a confirmation order.
-
-4. **User Account Management**:
-   - Test Case 16: Verify that users can update their profile information (e.g., name, address, contact details).
-   - Test Case 17: Verify that users can change their password and update account preferences.
-   - Test Case 18: Verify that users can view their order history and track the status of their orders.
-   - Test Case 19: Verify that users can log out of their account securely.
-
-5. **Payment Processing**:
-   - Test Case 20: Verify that users can make payments using different payment methods (e.g., credit/debit card, PayPal, etc.).
-   - Test Case 21: Verify that payment transactions are processed securely and payment details are encrypted.
-   - Test Case 22: Verify that users receive a confirmation email and order receipt after completing a payment.
-
-6. **Performance and Scalability**:
-   - Test Case 23: Verify that the system can handle a large number of concurrent users during peak traffic periods.
-   - Test Case 24: Verify that the response times for critical actions (e.g., product search, checkout) meet acceptable performance standards.
-   - Test Case 25: Verify that the system can scale to accommodate growth in the number of products and users over time.
-
-These are just a few examples of test cases for an eCommerce solution. Depending on the specific requirements, functionalities, and complexities of the system, additional test cases may be needed to ensure comprehensive testing coverage and validate the quality of the software.
 
 
 ## White-box, Black-Box,Gray-box Testing
