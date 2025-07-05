@@ -1,9 +1,6 @@
-
-
 # Why Shared Setup is Like a Well-Prepared Kitchen
 
 *"Imagine you’re a chef. Every dish you cook in a night might use the same prep station, stove, or knife. You don’t set up a new kitchen for every dish. That would waste time and energy. In testing, you sometimes need the same heavy or expensive setup shared across multiple tests. That’s where xUnit’s \[Collection] and shared context come to the rescue — so you set up once, reuse often, and clean up properly."*
-
 
 ✅ **Why You Need Shared Context**
 
